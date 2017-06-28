@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:jeffbuttars/jeffbuttars.github.io",
   "author": "Jeff Buttars <jeffbuttars@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  }
 }
