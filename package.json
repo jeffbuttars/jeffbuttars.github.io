@@ -1,0 +1,8 @@
+{
+  "name": "jeffbuttars.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeffbuttars/jeffbuttars.github.io",
+  "author": "Jeff Buttars <jeffbuttars@gmail.com>",
+  "license": "MIT"
+}
