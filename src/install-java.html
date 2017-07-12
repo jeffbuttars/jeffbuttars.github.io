@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" href="css/tachyons.min.css">
+        <!-- <script -->
+        <!-- src="https://code.jquery.com/jquery-3.1.1.min.js" -->
+        <!-- integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" -->
+        <!-- crossorigin="anonymous"></script> -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <style type="text/css">
+
+        body {
+            background-color: #FFFFFF;
+        }
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        .main.container {
+            margin-top: 7em;
+        }
+        .wireframe {
+            margin-top: 2em;
+        }
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        </style>
+
+        <title>Chickadess</title>
+    </head>
+    <body>
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Chickadees
+      </a>
+      <a href="#" class="item">Home</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui main text container">
+    <h1 class="ui header">Install Java JDK 8 from Oracle (Windows instructions)</h1>
+    <p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04" target="_blank">Linux/Ubuntu 16.04 instructions</a></p>
+    <p>We'll use the Java Development Kit version 8 provided by Oracle</p>
+        <p>
+        Head over to the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Oracle Download Page Here.</a>
+        </p>
+        Or use Google:
+        <img class="w-100" src="img/javaDownloadGoogle.png" alt="Google search java sdk download" />
+        <p class="mt3>
+        The JDK download page will like the image below. You'll need accept the
+        licensing agreement, by the red arrow, before you can download the JDK using the links on the right
+        side of the top box of links.
+        </p>
+        <a href="img/javaOracleDownloadPage.png"><img class="w-100" src="img/javaOracleDownloadPage.png" alt="Oracle java sdk download" /></a>
+
+        <div class="mt3">
+        After accepting the license, download the Windows x86 or x64 version of the SDK.
+        If you're not sure which, try the x64 version(the last link in the list) first.
+        <a class="mt3" href="img/javaOracleDownloadProgress.png"><img class="w-100" src="img/javaOracleDownloadProgress.png" alt="Oracle java sdk downloading" /></a>
+        </div>
+
+
+        <div class="mt3">
+            After the download finishes, open the installer by clicking on the download
+            indicator on your web browser or by going to your Downloads folder and
+            finding it there. You will then go through a standard looking installer.
+        </div>
+
+        <div class="mt3">
+            Go ahead and click the Next > button the get the installation started:
+        </div>
+
+        <a class="mt3" href="img/javaInstallerStart.png"><img class="w-100" src="img/javaInstallerStart.png" alt="Oracle java sdk installer" /></a>
+
+        <div class="mt3">
+            You don't need to change anything on the custom setup page, just click Next >
+            to continue:
+        </div>
+
+        <a class="mt3" href="img/javaInstallerFeaturePage.png"><img class="w-100" src="img/javaInstallerFeaturePage.png" alt="Oracle java sdk installer" /></a>
+
+        <div class="mt3">
+            You don't need to change anything on the destination folder page, just click Next >
+            to continue:
+        </div>
+
+        <a class="mt3" href="img/javaInstallerDestination.png"><img class="w-100" src="img/javaInstallerDestination.png" alt="Oracle java sdk installer" /></a>
+
+        <div class="mt3">
+            You should now see a couple progress pages like the following
+        </div>
+
+        <a class="mt3" href="img/javaInstallerProgress.png"><img class="w-100" src="img/javaInstallerProgress.png" alt="Oracle java sdk installer progress" /></a>
+        <a class="mt3" href="img/javaInstallerProgress2.png"><img class="w-100" src="img/javaInstallerProgress2.png" alt="Oracle java sdk installer progress" /></a>
+
+        <div class="mt3">
+            When the installation is done you'll get a summary page like the following, go ahead and
+            click close.
+        </div>
+
+        <a class="mt3" href="img/javaInstallerSummary.png"><img class="w-100" src="img/javaInstallerSummary.png" alt="Oracle java sdk installer summary" /></a>
+
+        <div class="mt3">
+            Now we need to add the JDK executable directory to our Path environmental variable. The
+            Path variable is used to track directories the OS, Windows in this case but it's very
+            similar on Linux and OSX, should look into for executable files. The JDK installer
+            doesn't do this for us so we'll have to do this ourselves.
+            <p>
+             For good measure, we'll test our Path first by trying to run the Java compiler, javac,
+             in a terminal. Open a terminal by running or searching for cmd:
+            </p>
+        </div>
+        <a class="mt3" href="img/cmdLaunch.png"><img class="w-100" src="img/cmdLaunch.png" alt="Cmd launch" /></a>
+
+        <div class="mt3">
+        Once the terminal has opened, type the command <pre>javac</pre> and hit enter. You'll
+        probably get a complaint from the terminal about not being able to find the command.
+        </div>
+        <a class="mt3" href="img/cmdJavac.png"><img class="w-100" src="img/cmdJavac.png" alt="Cmd javac" /></a>
+        <a class="mt3" href="img/cmdJavacNotInstalledOutput.png"><img class="w-100" src="img/cmdJavacNotInstalledOutput.png" alt="Cmd javac not installed" /></a>
+
+        <div class="mt3">
+        OK, so now we need to edit our Path. Start by opening the Control Panel
+        </div>
+
+        <a class="mt3" href="img/launchControlPanel.png"><img class="w-100" src="img/launchControlPanel.png" alt="Launch control panel" /></a>
+
+        <div class="mt3">
+        Click on and open the System and Security section
+        </div>
+        <a class="mt3" href="img/controlPanelSysAndSec.png"><img class="w-100" src="img/controlPanelSysAndSec.png" alt="Control panel" /></a>
+
+        <div class="mt3">
+        Then click on and open the System section
+        </div>
+        <a class="mt3" href="img/controlPanelSysAndSec-security.png"><img class="w-100" src="img/controlPanelSysAndSec-security.png" alt="Control panel System" /></a>
+
+        <div class="mt3">
+        Then click on and open the Advanced system settings section
+        </div>
+        <a class="mt3" href="img/controlPanelSysAndSec-security-advanced.png"><img class="w-100" src="img/controlPanelSysAndSec-security-advanced.png" alt="Control panel System advanced" /></a>
+
+
+        <div class="mt3">
+            Now the System Properties dialog will be open. Open the Advanced tab, if it's not there
+            already, and click on the Environmental Variables button near the bottom.
+        </div>
+        <a class="mt3" href="img/systemPropDlg.png"><img class="w-100" src="img/systemPropDlg.png" alt="system properties" /></a>
+
+        <div class="mt3">
+            The Environmental Variables dialog will now be open. Click on and select the Path
+            variable row and then click the <pre>Edit...</pre> Button
+        </div>
+        <a class="mt3" href="img/envVarsDlg2.png"><img class="w-100" src="img/envVarsDlg2.png" alt="Env vars dialog" /></a>
+
+        <div class="mt3">
+            Now you'll have the Edit environmental variable dialog open. Click the New Button, then
+            the Browse... button.
+        </div>
+        <a class="mt3" href="img/envVarsEditNewDlg.png"><img class="w-100" src="img/envVarsEditNewDlg.png" alt="Env vars edit dialog" /></a>
+        <a class="mt3" href="img/envVarsEditBrowseDlg.png"><img class="w-100" src="img/envVarsEditBrowseDlg.png" alt="Env vars edit dialog" /></a>
+
+        <div class="mt3">
+            Now you'll need to browse to the location of our JDK bin directory and select it. It's
+            on the C: drive in Program Files under Java. Follow the clicks in the pictures below:
+        </div>
+        <a class="mt3" href="img/envBrowsPC.png"><img class="w-100" src="img/envBrowsPC.png" alt="Env vars edit browse dialog" /></a>
+        <a class="mt3" href="img/envBrowsLDC.png"><img class="w-100" src="img/envBrowsLDC.png" alt="Env vars edit browse dialog" /></a>
+        <a class="mt3" href="img/envBrowsProgramFiles.png"><img class="w-100" src="img/envBrowsProgramFiles.png" alt="Env vars edit browse dialog" /></a>
+        <a class="mt3" href="img/envBrowsJava2.png"><img class="w-100" src="img/envBrowsJava2.png" alt="Env vars edit browse dialog" /></a>
+        <a class="mt3" href="img/envBrowsJDK.png"><img class="w-100" src="img/envBrowsJDK.png" alt="Env vars edit browse dialog" /></a>
+        <a class="mt3" href="img/envBrowsJDKbinOk.png"><img class="w-100" src="img/envBrowsJDKbinOk.png" alt="Env vars edit browse dialog" /></a>
+
+        <div class="mt3">
+            Once you've found and selected the bin directory in the JDK location click the OK button
+            on the Browse for folder dialog like in the image above.
+        </div>
+
+        <div class="mt3">
+            Now you can see the new path entry in the Edit environmental variable dialog! Go ahead
+            and click OK to close the dialog.
+        </div>
+        <a class="mt3" href="img/envVarsEditDoneDlg.png"><img class="w-100" src="img/envVarsEditDoneDlg.png" alt="Env vars edit dialog" /></a>
+
+        <div class="mt3">
+            Click OK on the Environmental Variables dialog to close it too.
+        </div>
+        <a class="mt3" href="img/envVarsDlgDone.png"><img class="w-100" src="img/envVarsDlgDone.png" alt="Env vars edit dialog" /></a>
+
+        <div class="mt3">
+            OK, we're done with that. Go ahead click the OK button on the System Properties dialog
+        </div>
+        <a class="mt3" href="img/SystemPropsDlgOk.png"><img class="w-100" src="img/SystemPropsDlgOk.png" alt="system properties" /></a>
+
+        <div class="mt3">
+            Now, again let's test out the javac command in a terminal and see what the output is.
+            Launch the terminal with the cmd command and type javac then enter into the terminal
+            window:
+        </div>
+        <a class="mt3" href="img/cmdLaunch.png"><img class="w-100" src="img/cmdLaunch.png" alt="Cmd launch" /></a>
+        <a class="mt3" href="img/cmdJavac.png"><img class="w-100" src="img/cmdJavac.png" alt="Cmd javac" /></a>
+        <div class="mt3">
+            If the output looks like the output in the image below, that is good! It's the command's
+            help output, we got it!
+        </div>
+        <a class="mt3" href="img/cmdPromptJavaCmdOutput.png"><img class="w-100" src="img/cmdPromptJavaCmdOutput.png" alt="Cmd javac" /></a>
+
+        <div class="mt5">
+            <a href="../index.html">Back</a>
+        </div>
+
+  </div>
+
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Chicadees Edu</h4>
+          <p>.</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <div class="ui horizontal inverted small divided link list">
+      </div>
+    </div>
+  </div>
+
+    </body>
+</html>
